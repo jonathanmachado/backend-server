@@ -19,7 +19,7 @@ app.get('/:type/:img', (request, response, next) => {
     if (fs.existsSync(pathImage)) {
         response.sendFile(pathImage);
     } else {
-        response.sendfile(pathNoImage);
+        response.sendFile(pathNoImage);
     }
     
 });
